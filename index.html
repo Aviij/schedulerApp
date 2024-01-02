@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scheduler</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Works</h1>
-    <script src="script.js"></script>
     
+    <header>
+        <h1>Scheduler</h1>
+    </header>
+
+    <main>
+        <section class="task-list-container">
+            <p class="no-tasks-message">You have no tasks yet!</p>
+
+            <article class="task-item">
+                <input type="checkbox" aria-label="Mark Task 1 complete">
+                <h2>Task 1</h2>
+                <p>Description of the task</p>
+                <time datetime="2024-01-02">Due: January 2, 2024</time>
+            </article>
+
+            </section>
+
+        <form id="add-task-form">
+            <label for="task-input">Add a new task:</label>
+            <input type="text" id="task-input">
+            <button type="submit">Add Task</button>
+            <p class="error-message"></p>
+            <p class="success-message"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; AvishkaDilsha 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
