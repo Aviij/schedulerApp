@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <script src="script.js"></script>
     <header>
         <h1>Scheduler</h1>
     </header>
 
     <main>
+        <button id="dark-mode-toggle">Toggle Dark Mode </button>
+
         <section class="task-list-container">
             <p class="no-tasks-message">You have no tasks yet!</p>
 
@@ -28,16 +30,24 @@
         <form id="add-task-form">
             <label for="task-input">Add a new task:</label>
             <input type="text" id="task-input">
+            
+
+            <label for="time-slots">Time Slot: </label>
+            <input type="text" id="time-slots">
+
             <button type="submit">Add Task</button>
+
+
             <p class="error-message"></p>
             <p class="success-message"></p>
         </form>
+       
     </main>
 
     <footer>
         <p>&copy; AvishkaDilsha 2024</p>
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>

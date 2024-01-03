@@ -4,3 +4,35 @@ body{
 
 }
 
+/*color Variables*/
+
+:root { 
+
+    --primary-color :  #007bff; /*light mode primary color */
+    --secondry-color : #28a745; /*light mode secondry color */
+}
+
+
+/*creates a dark mode  : defined styles for dark-mode in this css class*/
+
+
+.dark-mode{
+
+    background-color: #fff;/*Light background*/
+    color: #333; /*Dark text*/
+    --primary-color:#17a2b8;/* Dark mode primary color */
+    --secondry-color:#28a745;/* Dark mode secondary color (adjust as needed) */
+   /* ...other dark mode colors... */
+ 
+
+}
+
+h1{
+
+    color: var(--primary-color);
+}
+
+
+body.dark-mode h1 {
+    background-color: #444;
+}
